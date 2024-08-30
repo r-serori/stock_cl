@@ -1,0 +1,18 @@
+# ベースイメージ
+FROM node:22-alpine
+
+# 作業ディレクトリの設定
+WORKDIR /app
+
+# package.jsonとpackage-lock.jsonをコピーしてnpm install
+COPY package*.json ./
+RUN npm install
+
+# アプリケーションのソースをコピー
+COPY . .
+
+# ポートの公開
+EXPOSE 3000
+
+# 開発サーバーの起動
+CMD ["npm", "start"]

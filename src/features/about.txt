@@ -1,0 +1,1 @@
+Redux Toolkit のスライス（Slice）ごとにディレクトリを作成し、その中に関連するコンポーネントやスライス（exampleSlice.js）を格納します。

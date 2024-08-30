@@ -1,0 +1,6 @@
+exampleSlice.ts
+
+特定の機能に対応する Redux スライスを定義します。このファイルは、Redux の状態、アクション、およびリデューサーを含んでいます。
+ExampleComponent.ts
+
+Redux の状態を利用するコンポーネントが含まれます。
